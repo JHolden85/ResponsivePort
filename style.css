@@ -9,3 +9,15 @@ h1 {
         height: 200px;
         width: 200px;
       }
+
+h2 {
+  text-align: center;
+  text-shadow: 10px;
+}
+
+.bio {
+  text-align: center;
+  font-weight: 900;
+  padding-top: -5px;
+  font-weight: ;
+}
