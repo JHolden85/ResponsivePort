@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="./public/bootstrap.css">
     <title>Jeremiah Holden</title>
 </head>
-    <body>
+<body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
           <a class="navbar-brand" href="#">Jeremiah Holden</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,27 +36,53 @@
                 </div>
               </li> -->
             </ul>
-           
+        
           </div>
         </nav>
 
-        <div class="row">
+        <div class="row padding 5% 5% 0% 5%">
           <div class="col">
-            <a href="https://www.instagram.com/j_hol_85/">
-              <img src="Images/AppInstagram.png" alt="instaLink">
-              </a>
           </div>
           <div class="col">
-            <a href="https://www.facebook.com/jeremiah.holden.39">
-              <img src="Images/AppFacebook.png" alt="facebookLink">
-              </a>
+            <container class="container-m">
+              <form class="form-group">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input type="name" class="form-control" id="firstName" placeholder="Charles" required="">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="name" class="form-control" id="lastName" placeholder="Xavier" required="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-12">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="charlesxavier@gmail.com" required="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-12">
+                        <label for="contactMessage">Message</label>
+                        <textarea class="form-control rounded-0" id="contactMessage" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+      
+          </container>
           </div>
           <div class="col">
-            <a href="https:www.twitter.com/jholden85">
-              <img src="Images/AppTwitter.png" alt="twitterLink">
-              </a>
           </div>
         </div>
       </div>
+
+        
+    
 </body>
 </html>
