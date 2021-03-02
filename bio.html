@@ -3,63 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./public/bootstrap.css">
-    <link rel="stylesheet" href="./public/portfolio.css">
-    <title>Jeremiah Holden</title>
-</head>
-    <body>
-      <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <a class="navbar-brand" href="#">Jeremiah Holden</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-              </li> -->
-            </ul>
-           
-          </div>
-        </nav>
-      </header>
+    <title>Document</title>
 
-        <div class="row">
-          <div class="col">
-            <a href="https://www.instagram.com/j_hol_85/">
-              <img src="Images/AppInstagram.png" alt="instaLink">
-              </a>
-          </div>
-          <div class="col">
-            <a href="https://www.facebook.com/jeremiah.holden.39">
-              <img src="Images/AppFacebook.png" alt="facebookLink">
-              </a>
-          </div>
-          <div class="col">
-            <a class="twit" href="https:www.twitter.com/jholden85">
-              <img src="Images/AppTwitter.png" alt="twitterLink">
-              </a>
-          </div>
-        </div>
+    <!-- Adding a stylesheet from Bootswatch-->
+    <link rel="stylesheet" href="./public/mystyle.css">
+    <link rel="stylesheet" href="./public/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="./public/script.js"></script>
+</head>
+<body>
+    <h1 id="home">Nicolai Pitroff's Portfolio</h1>
+       
+<!-- The Image Bar -->
+<div class="row">
+    <div class="column">
+      <img src="./images/crazyTongue.jpg" alt="Crazy Tongue" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="./images/golf.jpg" alt="golf" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="./images/Headshot.jpg" alt="Headshot" style="width:100%">
+    </div>
+  </div>
+
+  <!-- NAV BAR -->
+  <div id="navbar">
+    <a href="https://www.linkedin.com/in/nicolaipitroff">
+      <img src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="My Linked In" id="myLink">
+    </a>
+    <a href="https://github.com/NPitroff" id="myGit">
+    <img src="https://avatars0.githubusercontent.com/u/9919?s=280&v=4" alt="My Github" id="myGit">
+  </a>
+    <a href="index.html">Home</a>
+    <a href="./bio.html">Biography</a>
+    <a href ="./info.html">Contact Me</a>
+      <button onclick="dropdownFunction()" class="dropbtn">My Project Code Files</button>
+      <div id="gitDropdown" class="dropdown-content">
+        <a href="https://github.com/NPitroff/Responsive-Portfolio">My Portfolio</a>
+        <a href="https://github.com/NPitroff/Password_Generator.git">Password_Generator</a>
+        <a href="https://github.com/NPitroff/Horiseon-Semantic-Code.git">Semantic Code</a>
+        <a href="https://github.com/NPitroff/Nicolai-s-Javascript-Quiz.git">Javascript_Quiz</a>
+        <a href="https://github.com/NPitroff/Nicolai-workplace-calendar.git">Workplace Calendar</a>
+        <a href="https://github.com/NPitroff/Nicolai-Weather-Map.git">Weather Map</a>
+        <a href="https://github.com/NPitroff/Nicolai_Node_ReadMe.git">Node Readme Generator</a>
+        <a href="https://github.com/NPitroff/Employee-Template-Generator.git">Employee Template Generator</a>
+        <a href="https://github.com/NPitroff/Note_Taking_App_v2.1.git">Note Taking App</a>
+        <a href="https://github.com/NPitroff/Employee_Database.git">Employee Database</a>
+        <a href="https://github.com/NPitroff/Nicolai_E-Commerce_Database.git">E-Commerce Database</a>
+        <a href="https://github.com/NPitroff/NDPendent-Coder-Blog.git">Coding Blog</a>
+
       </div>
+      <button onclick="secondDownFunction()" class="depbtn">My Deployed Projects</button>
+      <div id="depDropdown" class="depdown-content">
+        <a href="https://jholden85.github.io/ResponsivePort/">My Portfolio</a>
+      </div>
+    </div>
+  </div>
+        <!-- BIOGRAPHY PARAGRAPH -->
+        <p class="state">I was born in a small town outside of San Diego, called Valley Center. After high school I joined the navy where I served as a Nuclear Electricians Mate. I served for 10 years, and then moved on to pursue a different career path.
+        <br>
+        <br>
+        I have recently enrolled in the UCI Full Stack Development class to learn a new skill, and to bring new job possibilites.</p>
+    </section>
+    <section id="resume">
+      <a href="../images/resume.pdf">Downlaod My Resume Here</a>
+        <iframe src="../images/resume.pdf" width="100%" height="500px"></iframe>
+    </section>
 </body>
 </html>
